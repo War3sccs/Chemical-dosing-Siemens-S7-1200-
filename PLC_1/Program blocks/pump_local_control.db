@@ -1,4 +1,4 @@
-﻿DATA_BLOCK "pump_local_control"
+﻿DATA_BLOCK "local_control"
 { S7_Optimized_Access := 'TRUE' }
 VERSION : 0.1
 NON_RETAIN
@@ -6,6 +6,15 @@ NON_RETAIN
       start_stop : Array[0..5] of Bool;
       pump_maintain : Array[0..5] of Bool;
       flow_set : Array[0..5] of Real;
+      flow_read : Array[0..5] of Real;
+      tank_level : Array[0..5] of Real;
+      valve_action : Array[0..5] of Bool;
+      low_level_alarm : Array[0..5] of Bool;
+      low_level_alarm_set : Array[0..5] of Real;
+      flow_meter_read : Array[0..30] of Bool;
+      flow_meter_read_error : Array[0..5] of Word;
+      dosing_flow : Array[0..20] of Real;
+      dosing_accumulate : Array[0..20] of Real;
    END_VAR
 
 

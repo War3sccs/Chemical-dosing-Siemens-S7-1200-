@@ -1,4 +1,4 @@
-﻿DATA_BLOCK "pump_remote_control"
+﻿DATA_BLOCK "remote_control"
 { S7_Optimized_Access := 'TRUE' }
 VERSION : 0.1
 NON_RETAIN
@@ -6,6 +6,7 @@ NON_RETAIN
       start_stop : Array[0..5] of Bool;
       pump_maintain : Array[0..5] of Bool;
       flow_set : Array[0..5] of Real;
+      valve_action : Array[0..5] of Bool;
    END_VAR
 
 

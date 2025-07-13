@@ -1,0 +1,15 @@
+﻿DATA_BLOCK "MB_MASTER_DB"
+{InstructionName := 'MB_MASTER';
+ LibVersion := '2.2';
+ S7_Optimized_Access := 'TRUE' }
+AUTHOR : SIMATIC
+FAMILY : MODBUS
+NAME : MB_MASTR
+VERSION : 2.2
+NON_RETAIN
+MB_MASTER
+
+BEGIN
+
+END_DATA_BLOCK
+

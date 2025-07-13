@@ -1,0 +1,20 @@
+﻿FUNCTION "flow_meter_read" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	//读流量仪表数据
+	
+	//瞬时流量
+	//次氯酸钠
+	"local_control".dosing_flow[1] := UINT_TO_REAL("RS-485"."40005")*32768.0 + UINT_TO_REAL("RS-485"."40006") +UINT_TO_REAL("RS-485"."40007") / 1000;
+	"local_control".dosing_flow[2] := UINT_TO_REAL("RS-485"."40008") * 32768.0 + UINT_TO_REAL("RS-485"."40009") + UINT_TO_REAL("RS-485"."40010") / 1000;
+	
+	//累积容积
+	//次氯酸钠
+	"local_control".dosing_accumulate[1] := UINT_TO_REAL("RS-485"."40011") * 32768.0 ** 3.0 + UINT_TO_REAL("RS-485"."40012") * 32768.0 ** 2.0 + UINT_TO_REAL("RS-485"."40013") * 32768.0
+	+ UINT_TO_REAL("RS-485"."40014")+ UINT_TO_REAL("RS-485"."40015") / 1000;
+	"local_control".dosing_accumulate[2] := UINT_TO_REAL("RS-485"."40016") * 32768.0 ** 3.0 + UINT_TO_REAL("RS-485"."40017") * 32768.0 ** 2.0 + UINT_TO_REAL("RS-485"."40018") * 32768.0
+	+ UINT_TO_REAL("RS-485"."40019") + UINT_TO_REAL("RS-485"."40020") / 1000;
+END_FUNCTION
+
