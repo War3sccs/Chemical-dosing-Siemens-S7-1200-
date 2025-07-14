@@ -18,6 +18,7 @@ NON_RETAIN
       valve_opening : Array[0..5] of Bool;
       valve_closing : Array[0..5] of Bool;
       high_level_alarm : Array[0..5] of Bool;
+      high_level_alarm_set : Array[0..5] of Real;
    END_VAR
 
 
