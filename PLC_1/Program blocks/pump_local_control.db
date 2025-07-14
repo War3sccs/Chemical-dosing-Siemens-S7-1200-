@@ -15,6 +15,9 @@ NON_RETAIN
       flow_meter_read_error : Array[0..5] of Word;
       dosing_flow : Array[0..20] of Real;
       dosing_accumulate : Array[0..20] of Real;
+      valve_opening : Array[0..5] of Bool;
+      valve_closing : Array[0..5] of Bool;
+      high_level_alarm : Array[0..5] of Bool;
    END_VAR
 
 
