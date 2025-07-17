@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2025-07-13T07:45:37.1088017Z</Created>
+    <Created>2025-07-17T00:36:38.4776718Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -376,46 +376,51 @@
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="1号计量泵运行" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
       <Constant>
         <ConstantType>Int</ConstantType>
-        <ConstantValue>0</ConstantValue>
+        <ConstantValue>5530</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="22">
+    <Access Scope="GlobalVariable" UId="23">
       <Symbol>
         <Component Name="1号泵流量反馈" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="23">
+    <Access Scope="LiteralConstant" UId="24">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>27648</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="LocalVariable" UId="24">
+    <Access Scope="LocalVariable" UId="25">
       <Symbol>
         <Component Name="flow_read_temp1" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="25">
+    <Access Scope="LiteralConstant" UId="26">
       <Constant>
         <ConstantType>Real</ConstantType>
         <ConstantValue>0.0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="LocalVariable" UId="26">
+    <Access Scope="LocalVariable" UId="27">
       <Symbol>
         <Component Name="flow_read_temp1" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="27">
+    <Access Scope="LiteralConstant" UId="28">
       <Constant>
         <ConstantType>Real</ConstantType>
-        <ConstantValue>100.0</ConstantValue>
+        <ConstantValue>50.0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="28">
+    <Access Scope="GlobalVariable" UId="29">
       <Symbol>
         <Component Name="local_control" />
         <Component Name="flow_read" AccessModifier="Array">
@@ -428,46 +433,75 @@
         </Component>
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="29">
-      <Constant>
-        <ConstantType>Int</ConstantType>
-        <ConstantValue>0</ConstantValue>
-      </Constant>
-    </Access>
     <Access Scope="GlobalVariable" UId="30">
       <Symbol>
-        <Component Name="2号泵流量反馈" />
+        <Component Name="1号计量泵运行" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="31">
-      <Constant>
-        <ConstantType>Int</ConstantType>
-        <ConstantValue>27648</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="32">
-      <Symbol>
-        <Component Name="flow_read_temp2" />
-      </Symbol>
-    </Access>
-    <Access Scope="LiteralConstant" UId="33">
       <Constant>
         <ConstantType>Real</ConstantType>
         <ConstantValue>0.0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="LocalVariable" UId="34">
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="local_control" />
+        <Component Name="flow_read" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="2号计量泵运行" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>5530</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="2号泵流量反馈" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="36">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>27648</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="37">
       <Symbol>
         <Component Name="flow_read_temp2" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="35">
+    <Access Scope="LiteralConstant" UId="38">
       <Constant>
         <ConstantType>Real</ConstantType>
-        <ConstantValue>100.0</ConstantValue>
+        <ConstantValue>0.0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="36">
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="flow_read_temp2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="40">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>50.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
       <Symbol>
         <Component Name="local_control" />
         <Component Name="flow_read" AccessModifier="Array">
@@ -480,46 +514,75 @@
         </Component>
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="37">
-      <Constant>
-        <ConstantType>Int</ConstantType>
-        <ConstantValue>0</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="GlobalVariable" UId="38">
+    <Access Scope="GlobalVariable" UId="42">
       <Symbol>
-        <Component Name="3号泵流量反馈" />
-      </Symbol>
-    </Access>
-    <Access Scope="LiteralConstant" UId="39">
-      <Constant>
-        <ConstantType>Int</ConstantType>
-        <ConstantValue>27648</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="40">
-      <Symbol>
-        <Component Name="flow_read_temp3" />
-      </Symbol>
-    </Access>
-    <Access Scope="LiteralConstant" UId="41">
-      <Constant>
-        <ConstantType>Real</ConstantType>
-        <ConstantValue>0.0</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="42">
-      <Symbol>
-        <Component Name="flow_read_temp3" />
+        <Component Name="2号计量泵运行" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="43">
       <Constant>
         <ConstantType>Real</ConstantType>
-        <ConstantValue>100.0</ConstantValue>
+        <ConstantValue>0.0</ConstantValue>
       </Constant>
     </Access>
     <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="local_control" />
+        <Component Name="flow_read" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="3号计量泵运行" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="46">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>5530</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="3号泵流量反馈" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="48">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>27648</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="49">
+      <Symbol>
+        <Component Name="flow_read_temp3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="50">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="51">
+      <Symbol>
+        <Component Name="flow_read_temp3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="52">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>50.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
       <Symbol>
         <Component Name="local_control" />
         <Component Name="flow_read" AccessModifier="Array">
@@ -532,145 +595,265 @@
         </Component>
       </Symbol>
     </Access>
-    <Part Name="Normalize" UId="45" DisabledENO="true">
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="3号计量泵运行" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="55">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="local_control" />
+        <Component Name="flow_read" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="57" />
+    <Part Name="Normalize" UId="58" DisabledENO="true">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
       <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
     </Part>
-    <Part Name="Scale_X" UId="46" DisabledENO="true">
+    <Part Name="Scale_X" UId="59" DisabledENO="true">
       <TemplateValue Name="SrcType" Type="Type">Real</TemplateValue>
       <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
     </Part>
-    <Part Name="Normalize" UId="47" DisabledENO="true">
+    <Part Name="Contact" UId="60">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Move" UId="61" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="62" />
+    <Part Name="Normalize" UId="63" DisabledENO="true">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
       <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
     </Part>
-    <Part Name="Scale_X" UId="48" DisabledENO="true">
+    <Part Name="Scale_X" UId="64" DisabledENO="true">
       <TemplateValue Name="SrcType" Type="Type">Real</TemplateValue>
       <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
     </Part>
-    <Part Name="Normalize" UId="49" DisabledENO="true">
+    <Part Name="Contact" UId="65">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Move" UId="66" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="67" />
+    <Part Name="Normalize" UId="68" DisabledENO="true">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
       <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
     </Part>
-    <Part Name="Scale_X" UId="50" DisabledENO="true">
+    <Part Name="Scale_X" UId="69" DisabledENO="true">
       <TemplateValue Name="SrcType" Type="Type">Real</TemplateValue>
       <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="70">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Move" UId="71" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
     </Part>
   </Parts>
   <Wires>
-    <Wire UId="51">
-      <Powerrail />
-      <NameCon UId="45" Name="en" />
-      <NameCon UId="47" Name="en" />
-      <NameCon UId="49" Name="en" />
-    </Wire>
-    <Wire UId="52">
-      <IdentCon UId="21" />
-      <NameCon UId="45" Name="min" />
-    </Wire>
-    <Wire UId="53">
-      <IdentCon UId="22" />
-      <NameCon UId="45" Name="value" />
-    </Wire>
-    <Wire UId="54">
-      <IdentCon UId="23" />
-      <NameCon UId="45" Name="max" />
-    </Wire>
-    <Wire UId="55">
-      <NameCon UId="45" Name="eno" />
-      <NameCon UId="46" Name="en" />
-    </Wire>
-    <Wire UId="56">
-      <NameCon UId="45" Name="out" />
-      <IdentCon UId="24" />
-    </Wire>
-    <Wire UId="57">
-      <IdentCon UId="25" />
-      <NameCon UId="46" Name="min" />
-    </Wire>
-    <Wire UId="58">
-      <IdentCon UId="26" />
-      <NameCon UId="46" Name="value" />
-    </Wire>
-    <Wire UId="59">
-      <IdentCon UId="27" />
-      <NameCon UId="46" Name="max" />
-    </Wire>
-    <Wire UId="60">
-      <NameCon UId="46" Name="out" />
-      <IdentCon UId="28" />
-    </Wire>
-    <Wire UId="61">
-      <IdentCon UId="29" />
-      <NameCon UId="47" Name="min" />
-    </Wire>
-    <Wire UId="62">
-      <IdentCon UId="30" />
-      <NameCon UId="47" Name="value" />
-    </Wire>
-    <Wire UId="63">
-      <IdentCon UId="31" />
-      <NameCon UId="47" Name="max" />
-    </Wire>
-    <Wire UId="64">
-      <NameCon UId="47" Name="eno" />
-      <NameCon UId="48" Name="en" />
-    </Wire>
-    <Wire UId="65">
-      <NameCon UId="47" Name="out" />
-      <IdentCon UId="32" />
-    </Wire>
-    <Wire UId="66">
-      <IdentCon UId="33" />
-      <NameCon UId="48" Name="min" />
-    </Wire>
-    <Wire UId="67">
-      <IdentCon UId="34" />
-      <NameCon UId="48" Name="value" />
-    </Wire>
-    <Wire UId="68">
-      <IdentCon UId="35" />
-      <NameCon UId="48" Name="max" />
-    </Wire>
-    <Wire UId="69">
-      <NameCon UId="48" Name="out" />
-      <IdentCon UId="36" />
-    </Wire>
-    <Wire UId="70">
-      <IdentCon UId="37" />
-      <NameCon UId="49" Name="min" />
-    </Wire>
-    <Wire UId="71">
-      <IdentCon UId="38" />
-      <NameCon UId="49" Name="value" />
-    </Wire>
     <Wire UId="72">
-      <IdentCon UId="39" />
-      <NameCon UId="49" Name="max" />
+      <Powerrail />
+      <NameCon UId="57" Name="in" />
+      <NameCon UId="60" Name="in" />
+      <NameCon UId="62" Name="in" />
+      <NameCon UId="65" Name="in" />
+      <NameCon UId="67" Name="in" />
+      <NameCon UId="70" Name="in" />
     </Wire>
     <Wire UId="73">
-      <NameCon UId="49" Name="eno" />
-      <NameCon UId="50" Name="en" />
+      <IdentCon UId="21" />
+      <NameCon UId="57" Name="operand" />
     </Wire>
     <Wire UId="74">
-      <NameCon UId="49" Name="out" />
-      <IdentCon UId="40" />
+      <NameCon UId="57" Name="out" />
+      <NameCon UId="58" Name="en" />
     </Wire>
     <Wire UId="75">
-      <IdentCon UId="41" />
-      <NameCon UId="50" Name="min" />
+      <IdentCon UId="22" />
+      <NameCon UId="58" Name="min" />
     </Wire>
     <Wire UId="76">
-      <IdentCon UId="42" />
-      <NameCon UId="50" Name="value" />
+      <IdentCon UId="23" />
+      <NameCon UId="58" Name="value" />
     </Wire>
     <Wire UId="77">
-      <IdentCon UId="43" />
-      <NameCon UId="50" Name="max" />
+      <IdentCon UId="24" />
+      <NameCon UId="58" Name="max" />
     </Wire>
     <Wire UId="78">
-      <NameCon UId="50" Name="out" />
+      <NameCon UId="58" Name="eno" />
+      <NameCon UId="59" Name="en" />
+    </Wire>
+    <Wire UId="79">
+      <NameCon UId="58" Name="out" />
+      <IdentCon UId="25" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="26" />
+      <NameCon UId="59" Name="min" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="27" />
+      <NameCon UId="59" Name="value" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="28" />
+      <NameCon UId="59" Name="max" />
+    </Wire>
+    <Wire UId="83">
+      <NameCon UId="59" Name="out" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="30" />
+      <NameCon UId="60" Name="operand" />
+    </Wire>
+    <Wire UId="85">
+      <NameCon UId="60" Name="out" />
+      <NameCon UId="61" Name="en" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="31" />
+      <NameCon UId="61" Name="in" />
+    </Wire>
+    <Wire UId="87">
+      <NameCon UId="61" Name="out1" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="33" />
+      <NameCon UId="62" Name="operand" />
+    </Wire>
+    <Wire UId="89">
+      <NameCon UId="62" Name="out" />
+      <NameCon UId="63" Name="en" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="34" />
+      <NameCon UId="63" Name="min" />
+    </Wire>
+    <Wire UId="91">
+      <IdentCon UId="35" />
+      <NameCon UId="63" Name="value" />
+    </Wire>
+    <Wire UId="92">
+      <IdentCon UId="36" />
+      <NameCon UId="63" Name="max" />
+    </Wire>
+    <Wire UId="93">
+      <NameCon UId="63" Name="eno" />
+      <NameCon UId="64" Name="en" />
+    </Wire>
+    <Wire UId="94">
+      <NameCon UId="63" Name="out" />
+      <IdentCon UId="37" />
+    </Wire>
+    <Wire UId="95">
+      <IdentCon UId="38" />
+      <NameCon UId="64" Name="min" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="39" />
+      <NameCon UId="64" Name="value" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="40" />
+      <NameCon UId="64" Name="max" />
+    </Wire>
+    <Wire UId="98">
+      <NameCon UId="64" Name="out" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="99">
+      <IdentCon UId="42" />
+      <NameCon UId="65" Name="operand" />
+    </Wire>
+    <Wire UId="100">
+      <NameCon UId="65" Name="out" />
+      <NameCon UId="66" Name="en" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="43" />
+      <NameCon UId="66" Name="in" />
+    </Wire>
+    <Wire UId="102">
+      <NameCon UId="66" Name="out1" />
       <IdentCon UId="44" />
+    </Wire>
+    <Wire UId="103">
+      <IdentCon UId="45" />
+      <NameCon UId="67" Name="operand" />
+    </Wire>
+    <Wire UId="104">
+      <NameCon UId="67" Name="out" />
+      <NameCon UId="68" Name="en" />
+    </Wire>
+    <Wire UId="105">
+      <IdentCon UId="46" />
+      <NameCon UId="68" Name="min" />
+    </Wire>
+    <Wire UId="106">
+      <IdentCon UId="47" />
+      <NameCon UId="68" Name="value" />
+    </Wire>
+    <Wire UId="107">
+      <IdentCon UId="48" />
+      <NameCon UId="68" Name="max" />
+    </Wire>
+    <Wire UId="108">
+      <NameCon UId="68" Name="eno" />
+      <NameCon UId="69" Name="en" />
+    </Wire>
+    <Wire UId="109">
+      <NameCon UId="68" Name="out" />
+      <IdentCon UId="49" />
+    </Wire>
+    <Wire UId="110">
+      <IdentCon UId="50" />
+      <NameCon UId="69" Name="min" />
+    </Wire>
+    <Wire UId="111">
+      <IdentCon UId="51" />
+      <NameCon UId="69" Name="value" />
+    </Wire>
+    <Wire UId="112">
+      <IdentCon UId="52" />
+      <NameCon UId="69" Name="max" />
+    </Wire>
+    <Wire UId="113">
+      <NameCon UId="69" Name="out" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="114">
+      <IdentCon UId="54" />
+      <NameCon UId="70" Name="operand" />
+    </Wire>
+    <Wire UId="115">
+      <NameCon UId="70" Name="out" />
+      <NameCon UId="71" Name="en" />
+    </Wire>
+    <Wire UId="116">
+      <IdentCon UId="55" />
+      <NameCon UId="71" Name="in" />
+    </Wire>
+    <Wire UId="117">
+      <NameCon UId="71" Name="out1" />
+      <IdentCon UId="56" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
