@@ -1,0 +1,51 @@
+﻿FUNCTION "flow_meter_read" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	//读流量仪表数据
+	
+	//瞬时流量
+	//次氯酸钠
+	"local_control".dosing_flow[1] := UINT_TO_REAL("RS-485流量计1"."40005") * 32768.0 + UINT_TO_REAL("RS-485流量计1"."40006") + UINT_TO_REAL("RS-485流量计1"."40007") / 1000;
+	"local_control".dosing_flow[2] := UINT_TO_REAL("RS-485流量计1"."40008") * 32768.0 + UINT_TO_REAL("RS-485流量计1"."40009") + UINT_TO_REAL("RS-485流量计1"."40010") / 1000;
+	
+	//累积容积
+	//次氯酸钠
+	"local_control".dosing_accumulate[1] := UINT_TO_REAL("RS-485流量计1"."40011") * 32768.0 ** 3.0 + UINT_TO_REAL("RS-485流量计1"."40012") * 32768.0 ** 2.0 + UINT_TO_REAL("RS-485流量计1"."40013") * 32768.0
+	+ UINT_TO_REAL("RS-485流量计1"."40014") + UINT_TO_REAL("RS-485流量计1"."40015") / 1000;
+	"local_control".dosing_accumulate[2] := UINT_TO_REAL("RS-485流量计1"."40016") * 32768.0 ** 3.0 + UINT_TO_REAL("RS-485流量计1"."40017") * 32768.0 ** 2.0 + UINT_TO_REAL("RS-485流量计1"."40018") * 32768.0
+	+ UINT_TO_REAL("RS-485流量计1"."40019") + UINT_TO_REAL("RS-485流量计1"."40020") / 1000;
+	
+	//瞬时流量
+	//PAC
+	"local_control".dosing_flow[5] := UINT_TO_REAL("RS-485流量计2"."40005") * 32768.0 + UINT_TO_REAL("RS-485流量计2"."40006") + UINT_TO_REAL("RS-485流量计2"."40007") / 1000;
+	
+	//PAC低流量报警
+	IF "local_control".dosing_flow[5] < "local_control".low_flow_alarm_set[0] THEN
+	    "local_control".low_flow_alarm[0] := 1;
+	ELSE
+	    "local_control".low_flow_alarm[0] := 0;
+	END_IF;
+	    
+	//累积容积
+	//PAC
+	"local_control".dosing_accumulate[5] := UINT_TO_REAL("RS-485流量计2"."40011") * 32768.0 ** 3.0 + UINT_TO_REAL("RS-485流量计2"."40012") * 32768.0 ** 2.0 + UINT_TO_REAL("RS-485流量计2"."40013") * 32768.0;
+	
+	//瞬时流量
+	//烧碱
+	"local_control".dosing_flow[8] := UINT_TO_REAL("RS-485流量计3"."40005") * 32768.0 + UINT_TO_REAL("RS-485流量计3"."40006") + UINT_TO_REAL("RS-485流量计3"."40007") / 1000;
+	
+	//烧碱低流量报警
+	IF "local_control".dosing_flow[8] < "local_control".low_flow_alarm_set[1] THEN
+	    "local_control".low_flow_alarm[1] := 1;
+	ELSE
+	    "local_control".low_flow_alarm[1] := 0;
+	END_IF;
+	
+	//累积容积
+	//烧碱
+	"local_control".dosing_accumulate[8] := UINT_TO_REAL("RS-485流量计3"."40011") * 32768.0 ** 3.0 + UINT_TO_REAL("RS-485流量计3"."40012") * 32768.0 ** 2.0 + UINT_TO_REAL("RS-485流量计3"."40013") * 32768.0;
+	
+END_FUNCTION
+

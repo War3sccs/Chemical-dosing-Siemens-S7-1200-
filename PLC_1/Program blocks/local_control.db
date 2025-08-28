@@ -18,6 +18,10 @@ VERSION : 0.1
       valve_closing : Array[0..5] of Bool;
       high_level_alarm : Array[0..5] of Bool;
       high_level_alarm_set : Array[0..5] of Real;
+      energy_meter : Array[0..10] of Real;
+      tank_weigh : Array[0..5] of Real;
+      low_flow_alarm_set : Array[0..10] of Real;
+      low_flow_alarm : Array[0..10] of Bool;
    END_STRUCT;
 
 

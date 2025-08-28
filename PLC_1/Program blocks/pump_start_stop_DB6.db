@@ -1,4 +1,4 @@
-﻿DATA_BLOCK "pump_start_stop_DB2"
+﻿DATA_BLOCK "pump_start_stop_DB6"
 { S7_Optimized_Access := 'TRUE' }
 VERSION : 0.1
 NON_RETAIN

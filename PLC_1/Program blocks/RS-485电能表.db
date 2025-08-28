@@ -1,0 +1,91 @@
+﻿DATA_BLOCK "RS-485电能表"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+      "40000" : Word;
+      "40001" : Word;
+      "40002" : Word;
+      "40003" : Word;
+      "40004" : Word;
+      "40005" : Word;
+      "40006" : Word;
+      "40007" : Word;
+      "40008" : Word;
+      "40009" : Word;
+      "40010" : Word;
+      "40011" : Word;
+      "40012" : Word;
+      "40013" : Word;
+      "40014" : Word;
+      "40015" : Word;
+      "40016" : Word;
+      "40017" : Word;
+      "40018" : Word;
+      "40019" : Word;
+      "40020" : Word;
+      "40021" : Word;
+      "40022" : Word;
+      "40023" : Word;
+      "40024" : Word;
+      "40025" : Word;
+      "40026" : Word;
+      "40027" : Word;
+      "40028" : Word;
+      "40029" : Word;
+      "40030" : Word;
+      "40031" : Word;
+      "40032" : Word;
+      "40033" : Word;
+      "40034" : Word;
+      "40035" : Word;
+      "40036" : Word;
+      "40037" : Word;
+      "40038" : Word;
+      "40039" : Word;
+      "40040" : Word;
+      "40041" : Word;
+      "40042" : Word;
+      "40043" : Word;
+      "40044" : Word;
+      "40045" : Word;
+      "40046" : Word;
+      "40047" : Word;
+      "40048" : Word;
+      "40049" : Word;
+      "40050" : Word;
+      "40051" : Word;
+      "40052" : Word;
+      "40053" : Word;
+      "40054" : Word;
+      "40055" : Word;
+      "40056" : Word;
+      "40057" : Word;
+      "40058" : Word;
+      "40059" : Word;
+      "40060" : Word;
+      "40061" : Word;
+      "40062" : Word;
+      "40063" : Word;
+      "40064" : Word;
+      "40065" : Word;
+      "40066" : Word;
+      "40067" : Word;
+      "40068" : Word;
+      "40069" : Word;
+      "40070" : Word;
+      "40071" : Word;
+      "40072" : Word;
+      "40073" : Word;
+      "40074" : Word;
+      "40075" : Word;
+      "40076" : Word;
+      "40077" : Word;
+      "40078" : Word;
+   END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+
